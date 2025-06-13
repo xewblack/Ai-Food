@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingOne">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/onboarding_one"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/background"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TableLayout
+        android:layout_width="311dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We serve"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="incomparable"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delicacies"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="85dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="15dp"
+            android:text="All the best restaurants with their top"
+            android:textColor="#E7E7E7"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:text="menu waiting for you, they cant’t wait"
+            android:textColor="#E7E7E7"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text=" for your order!!"
+            android:textColor="#E7E7E7"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/indicator_one" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="26dp">
+
+            <Button
+                android:id="@+id/buttonSkip"
+                android:onClick="Skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FE8C00"
+                android:layout_marginTop="50dp"
+                android:text="Skip"
+                android:textColor="#CCCCCC"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:onClick="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:text="Next"
+                android:textSize="20dp"
+                android:backgroundTint="#FE8C00"/>
+        </LinearLayout>
+
+    </TableLayout>
+
+</RelativeLayout>
