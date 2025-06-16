@@ -32,7 +32,6 @@ public class OnboardingThree extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Переход на следующий экран
-                Intent intent = new Intent(OnboardingThree.this, Login.class);
                 startActivity(intent);
             }
         });

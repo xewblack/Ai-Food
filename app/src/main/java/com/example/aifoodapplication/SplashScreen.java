@@ -1,8 +1,6 @@
 package com.example.aifoodapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,20 +15,10 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash_screen);
-
-        // Сначала устанавливаем обработку оконных вставок
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        // Логика перехода на следующий экран
-        Handler handler = new Handler();
-        handler.postDelayed(() -> {
-            Intent intent = new Intent(SplashScreen.this, OnboardingOne.class);
-            startActivity(intent);
-            finish(); // Закрываем SplashActivity
-        }, 2000); // задержка в миллисекундах (2 сек.)
     }
 }
