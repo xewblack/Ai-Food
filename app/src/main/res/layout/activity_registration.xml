@@ -126,8 +126,10 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="  Sign in"
+            android:onClick="signIn"
             android:textColor="#FE8C00"
             android:textSize="20dp"
-            android:id="@+id/signIn"/>
+            android:id="@+id/signIn"
+            tools:ignore="OnClick" />
     </LinearLayout>
 </LinearLayout>

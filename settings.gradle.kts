@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
+
 rootProject.name = "Ai Food Application"
 include(":app")
- 

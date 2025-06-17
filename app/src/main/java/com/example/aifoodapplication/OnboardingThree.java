@@ -24,14 +24,15 @@ public class OnboardingThree extends AppCompatActivity {
             return insets;
 
         });
-        // Получаем ссылку на ImageButton
         ImageButton imageButton = findViewById(R.id.ImageStart);
 
-        // Устанавливаем обработчик нажатий
+// Создаем Intent для перехода на другой Activity
+        Intent intent = new Intent(this, Registration.class); // укажите здесь имя вашей следующей активности
+
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Переход на следующий экран
+                // Переходим на следующую активность
                 startActivity(intent);
             }
         });

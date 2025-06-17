@@ -105,9 +105,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:onClick="register"
             android:paddingTop="10dp"
             android:text="  Register"
             android:textColor="#FE8C00"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            tools:ignore="OnClick" />
     </LinearLayout>
 </LinearLayout>

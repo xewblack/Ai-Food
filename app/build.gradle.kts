@@ -6,6 +6,7 @@ android {
     namespace = "com.example.aifoodapplication"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "com.example.aifoodapplication"
         minSdk = 24

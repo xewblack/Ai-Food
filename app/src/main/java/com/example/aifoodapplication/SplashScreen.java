@@ -1,6 +1,8 @@
 package com.example.aifoodapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,11 @@ public class SplashScreen extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Handler handler = new Handler();
+        handler.postDelayed(() -> {
+            Intent intent = new Intent(SplashScreen.this, OnboardingOne.class);
+            startActivity(intent);
+            finish(); // Закрываем SplashActivity
+        }, 2000); // задержка в миллисекундах (2 сек.)
     }
 }
