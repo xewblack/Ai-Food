@@ -81,7 +81,7 @@
        android:id="@+id/forgotPass"/>
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/login_button"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_gravity="center"

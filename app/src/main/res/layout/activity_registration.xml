@@ -100,14 +100,14 @@
         android:layout_marginTop="15dp"/>
 
     <Button
-        android:id="@+id/buttonRegistration"
+        android:id="@+id/register_button"
         android:layout_width="360dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:text="Register"
         android:textSize="20dp"
-        android:backgroundTint="#FE8C00"/>
+        android:backgroundTint="#FE8C00" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -122,14 +122,15 @@
             android:textSize="20dp" />
 
         <TextView
+            android:id="@+id/signIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:onClick="signIn"
             android:paddingTop="10dp"
             android:text="  Sign in"
-            android:onClick="signIn"
             android:textColor="#FE8C00"
             android:textSize="20dp"
-            android:id="@+id/signIn"
             tools:ignore="OnClick" />
     </LinearLayout>
 </LinearLayout>
