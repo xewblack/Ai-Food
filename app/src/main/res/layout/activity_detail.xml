@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Верхняя часть с кнопкой назад и заголовком -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp">
+
+            <!-- Кнопка назад -->
+            <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="40dp"
+                android:onClick="Back"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/arrow_back"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- Заголовок "About this menu" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About this menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <!-- Остальной контент с увеличенными отступами -->
+        <!-- Изображение блюда -->
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_sample"
+            android:layout_marginTop="16dp" />
+
+        <!-- Название блюда -->
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burger With Meat"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <!-- Цена -->
+            <TextView
+                android:id="@+id/detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 12,230"
+                android:textSize="20sp"
+                android:textColor="#FFA500" />
+
+            <!-- Информация о доставке и рейтинге -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp">
+
+                <!-- Бесплатная доставка -->
+                <TextView
+                    android:id="@+id/delivery_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Delivery"
+                    android:textSize="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#FFA500" />
+
+                <!-- Время доставки -->
+                <TextView
+                    android:id="@+id/delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  20 - 30"
+                    android:textSize="20dp"
+                    android:textColor="#FFA500" />
+
+                <!-- Рейтинг -->
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  4.5"
+                    android:textSize="20dp"
+                    android:textColor="#FFA500" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <!-- Заголовок "About this menu" -->
+            <TextView
+                android:id="@+id/about_menu_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About this menu"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!-- Описание -->
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burger With Meat is a typical food from our restaurant that is much in demand by many people, this is very recommended for you."
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Рекомендуемое для вас -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingHorizontal="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended For You"
+                android:textSize="20sp"
+                android:layout_marginRight="70dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/see_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textSize="14sp"
+                android:textColor="#FFA500"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <!-- Кнопка "Добавить в корзину" -->
+        <Button
+            android:id="@+id/add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:backgroundTint="#FFA500"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
