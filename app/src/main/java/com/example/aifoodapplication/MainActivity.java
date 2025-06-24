@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Создайте список из 4 элементов
         List<CardItem> cardItems = new ArrayList<>();
-        cardItems.add(new CardItem(R.drawable.card, "Description for card 1"));
-        cardItems.add(new CardItem(R.drawable.card_2, "Description for card 2"));
-        cardItems.add(new CardItem(R.drawable.card_3, "Description for card 3"));
-        cardItems.add(new CardItem(R.drawable.card_4, "Description for card 4"));
+        cardItems.add(new CardItem(R.drawable.card, "Товар 1"));
+        cardItems.add(new CardItem(R.drawable.card_2, "Товар 2"));
+        cardItems.add(new CardItem(R.drawable.card_3, "Товар 3"));
+        cardItems.add(new CardItem(R.drawable.card_4, "Товар 4"));
 
         // Создаем адаптер, передавая контекст
         CardAdapter adapter = new CardAdapter(this, cardItems);
